@@ -1,0 +1,29 @@
+:root {
+  --paper: #f1ede2; --ink: #23211c; --faint: #7d786c; --rim: #d3cdbf; --accent: #b4561f;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #0b0b0a; --ink: #e9e7e2; --faint: #8b8881; --rim: #2a2925; --accent: #f08a3c; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 640px; margin: 0 auto; padding: 48px 20px 72px; }
+.mark { font-weight: 800; font-stretch: condensed; letter-spacing: 0.12em; font-size: 15px; }
+header { border-bottom: 3px solid var(--ink); padding-bottom: 10px; margin-bottom: 2px; display: flex; justify-content: space-between; align-items: baseline; }
+header + .rule { border-top: 1px solid var(--ink); margin-bottom: 36px; }
+header nav a { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; margin-left: 16px; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.01em; }
+.lede { font-size: 19px; margin: 0 0 8px; }
+.meta { color: var(--faint); font-size: 14px; margin: 0 0 36px; }
+h2 { font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); font-weight: 600;
+     border-bottom: 1px solid var(--rim); padding-bottom: 6px; margin: 40px 0 14px; }
+h3 { font-size: 17px; margin: 22px 0 4px; }
+p, li { margin: 0 0 12px; }
+ul { padding-left: 20px; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.contact { border: 1px solid var(--rim); border-radius: 6px; padding: 16px 18px; margin-top: 8px; }
+footer { margin-top: 56px; color: var(--faint); font-size: 13px; border-top: 1px solid var(--rim); padding-top: 14px; }
